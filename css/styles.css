@@ -1,0 +1,93 @@
+@font-face {
+	font-family: Calculator;
+	src: url(../fonts/Calculator.ttf);
+}
+
+html,body,p,span,li,ul,div,button{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	width: 100%;
+	height:100%;
+}
+
+.calculator{
+	width:194px;
+	height:300px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#34383b; 
+	padding: 5px;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+.calculator .display{
+	width:100%;
+	height: 40px;
+	display: block;
+	margin-top: 4px;
+}
+
+.calculator .display input{
+	width:100%;
+	height: 100%;
+	line-height: 100%;
+	overflow: hidden;
+	background-color: transparent;
+	border: 0px solid;
+	box-sizing: border-box;
+	font-size: 30px;
+	font-family: Calculator;
+	background-color: #3DF500;
+	border-radius:5px; 
+	text-align: right;
+}
+
+.calculator .keys{
+	display: block;
+	margin: 15px 0 0 1px;
+	height:230px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}  
+
+.calculator .keys .key{
+	display: inline-block;
+	height: 42px;
+	width: 42px;
+	border-radius: 5px;
+	background-color: #d3d3d3;
+}
+
+.calculator .keys .key.op{
+	background-color: #d2322d;
+}
+
+.calculator .keys .key div{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 42px;
+	font-family: Calculator;
+	font-size: 25pt;
+	font-weight: bold;
+	width: 42px;
+	cursor: default;
+	-moz-user-select:none;
+}
+
+.key[value='CE'],
+.key[value='CE'] div{
+	width:134px !important;
+}
+
+.key[value='equal'],
+.key[value='equal'] div{
+	width:88px !important;
+}
